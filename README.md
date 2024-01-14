@@ -1,2 +1,2 @@
-# campustube
-SBHacks Submission : Introducing CampusTube: Your exclusive video platform for university students! Share your screenplays, films, educational insights, study guides, and campus highlights seamlessly. Connect, learn, and showcase the best of university life in one dynamic hub. Join CampusTube for a collaborative learning experience!
+# campus-marketplace
+SBHacks Submission : Introducing Campus-Marketplace: Your exclusive marketplace platform for university students! Share and find reused electronics and furniture seamlessly in one dynamic hub. 
