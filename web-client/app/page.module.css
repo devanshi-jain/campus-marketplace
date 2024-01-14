@@ -41,10 +41,17 @@
   margin: auto;
   max-width: 100%;
 }
+.productListing {
+  margin-top: 5vh;
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
 .thumbnail {
-  width: 250px;
-  height: 150px;
+  width: 400px; /* Adjust the width */
+  height: 300px; /* Adjust the height */
   margin: 10px;
   border: 2px solid black;
   border-radius: 10px;

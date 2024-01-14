@@ -1,2 +1,4 @@
-# campus-marketplace
-SBHacks Submission : Introducing Campus-Marketplace: Your exclusive marketplace platform for university students! Share and find reused electronics and furniture seamlessly in one dynamic hub. 
+# SBHacks Submission: Campus-Marketplace
+ Your college essentials marketplace to share and find and reuse electronics, furniture, textbooks, iclickers, and more within your campus community.
+ 
+![Home page](/web-client/public/main-img.jpg)

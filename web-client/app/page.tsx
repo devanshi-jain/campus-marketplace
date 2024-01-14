@@ -27,8 +27,13 @@ export default async function Home() {
         </div>
       </section>
 
+      <div className={styles.productListing}>
+            <h1>Product Listing</h1>
+          </div>
       <div className={styles.content}>
         <div className={styles.thumbnailContainer}>
+
+          <br />
           {videos.map((video) => (
             <Link key={video.filename} href={`/watch?v=${video.filename}`}>
               <div className={styles.thumbnail}>
