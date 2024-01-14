@@ -2,12 +2,13 @@
 
 import SignIn from "./sign-in";
 import Link from "next/link";
-
+import Image from "next/image";
 import styles from "./navbar.module.css";
 // import Upload from "./upload";
 import { useEffect, useState } from "react";
 import { onAuthStateChangedHelper } from "../firebase/firebase";
 import { User } from "firebase/auth";
+import Upload from "./upload";
 
 
 function NavBar() {
@@ -23,14 +24,15 @@ function NavBar() {
     return () => unsubscribe();
   }, [] /* No dependencies, never rerun */);
 
-
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <span className={styles.logoContainer}>
-          <img className={styles.logo} src="/icon.png" alt="Logo" style={{ width: "10vw" }} />
-        </span>
+        <Image width={90} height={90}
+          src="/icon.png" alt="Logo"/>
       </Link>
+      { 
+        user && <Upload />
+      }
       <SignIn user={user} />
     </nav>
   );
