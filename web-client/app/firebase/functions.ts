@@ -33,4 +33,4 @@ export async function uploadVideo(file: File) {
 export async function getVideos() {
     const response: any = await getVideosFunction();
     return response.data as Video[];
-  }
+}

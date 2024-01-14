@@ -16,7 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
-export const functions = getFunctions();
+export const functions = getFunctions(app);
 /**
  * Signs the user in with a Google popup.
  * @returns A promise that resolves with the user's credentials.
