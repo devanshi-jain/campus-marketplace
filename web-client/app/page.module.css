@@ -30,26 +30,24 @@
   font-size: 2rem; /* Increase the font size for p */
 }
 
-.thumbnail-container {
+.thumbnailContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; /* Center items vertically */
-  text-align: center; /* Center items horizontally */
-  border: 2px solid black;
+  align-items: center;
+  border: 2px solid transparent;
   border-radius: 10px;
   padding: 10px;
-  margin: auto; /* Center the container on the page */
-  max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+  margin: auto;
+  max-width: 100%;
 }
-
 
 .thumbnail {
   width: 250px;
-  height: 150px; /* Set a fixed height to maintain aspect ratio */
+  height: 150px;
   margin: 10px;
-  border: 2px solid transparent;
-  border-radius: 0; /* Remove border-radius */
+  border: 2px solid black;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   display: flex;
@@ -60,6 +58,3 @@
 .thumbnail:hover {
   transform: scale(1.1);
 }
-
-
-

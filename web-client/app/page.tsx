@@ -27,11 +27,13 @@ export default async function Home() {
         </div>
       </section>
 
-       <div className={styles.content}>
+      <div className={styles.content}>
         <div className={styles.thumbnailContainer}>
           {videos.map((video) => (
             <Link key={video.filename} href={`/watch?v=${video.filename}`}>
-              <Image src={'/thumbnail.png'} alt='video' width={250} height={150} className={styles.thumbnail} />
+              <div className={styles.thumbnail}>
+                <Image src={'/thumbnail.png'} alt='video' width={250} height={150} />
+              </div>
             </Link>
           ))}
         </div>

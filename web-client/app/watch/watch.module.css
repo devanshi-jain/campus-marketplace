@@ -1,0 +1,12 @@
+.watchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+  }
+
+  .watchContainer h1 {
+    font-size: 4em;
+  }
+  
