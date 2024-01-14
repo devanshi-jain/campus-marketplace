@@ -1,28 +1,41 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getVideos } from './firebase/functions';
-import styles from './page.module.css'
+import styles from './page.module.css';
 
 export default async function Home() {
   const videos = await getVideos();
 
   return (
     <main>
-    <div className={styles.header}>
-      <h1>Campus Marketplace</h1>
-    </div>
-    <div className={styles.content}>
-      {
-        videos.map((video) => (
-          <Link key={video.filename} href={`/watch?v=${video.filename}`}>
-            <Image src={'/thumbnail.png'} alt='video' width={120} height={80} className={styles.thumbnail} />
-          </Link>
-        ))
-      }
-      <div className={styles.imageContainer}>
-        <Image src="/your-image.jpg" alt="Your Image" width={400} height={300} />
+      <section className={styles.home}>
+        <div className={styles.leftContent}>
+          <div className={styles.header}>
+            <h1>Campus Marketplace</h1>
+          </div>
+          <p>
+            Your college essentials marketplace to share and find and reuse electronics, furniture, textbooks, iclickers, and more within your 
+            campus community.
+          </p>
+          {/* You can uncomment the repository link if needed */}
+          <p>
+            The repository for the code is: <a href="https://github.com/devanshi-jain/campus-marketplace" style={{ color: '#e28743' }}>https://github.com/devanshi-jain/campus-marketplace</a>
+          </p>
+        </div>
+        <div className={styles.rightContent}>
+          <Image src={'/main-img.jpg'} alt="illustration" width={750} height={750} />
+        </div>
+      </section>
+
+       <div className={styles.content}>
+        <div className={styles.thumbnailContainer}>
+          {videos.map((video) => (
+            <Link key={video.filename} href={`/watch?v=${video.filename}`}>
+              <Image src={'/thumbnail.png'} alt='video' width={250} height={150} className={styles.thumbnail} />
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
-  </main>
-  )
+    </main>
+  );
 }

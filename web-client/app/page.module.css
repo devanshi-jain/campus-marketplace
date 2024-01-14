@@ -1,3 +1,65 @@
-.thumbnail {
+.home {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  text-align: left;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.home-image {
+  max-width: 80%;
+  height: auto;
+  width: 70%;
+  padding-right: 10%;
+  padding: 0 10%;
+  padding-left: 5em;
+  justify-content: space-between;
   margin: 10px;
 }
+
+.home h1 {
+  position: relative;
+  font-size: 5vh; /* Increase the font size for h1 */
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.home p {
+  font-size: 2rem; /* Increase the font size for p */
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  text-align: center; /* Center items horizontally */
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto; /* Center the container on the page */
+  max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+}
+
+
+.thumbnail {
+  width: 250px;
+  height: 150px; /* Set a fixed height to maintain aspect ratio */
+  margin: 10px;
+  border: 2px solid transparent;
+  border-radius: 0; /* Remove border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+
+
